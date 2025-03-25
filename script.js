@@ -408,17 +408,17 @@ function onClickPlay() {
 
                     submitscore.addEventListener('click', function (event) {
 
-                        if (inputplayer.textContent != '') {
+                        event.preventDefault();
 
-                            event.preventDefault();
+                        if (inputplayer.value.trim() !== '') {
+
                             fetch("index.php", { method: "POST", body: new FormData(finalform) })
                             .then(res => res.text())
                             .then(() => alert("Dati salvati con successo!"));
 
-                        }
+                        } 
                         else {
 
-                            event.preventDefault();
                             inputplayer.placeholder = 'nick non valido!';
                             setTimeout(() => {
                                 inputplayer.placeholder = 'nickname (max 10 c.)';
