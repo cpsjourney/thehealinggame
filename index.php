@@ -1,6 +1,6 @@
 <?php
 
-$db = new SQLite3("gm_scores.sqlite");
+$db = new SQLite3('/tmp/gm_scores.sqlite');
 
 $db->exec("CREATE TABLE IF NOT EXISTS gm_scores (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
