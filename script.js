@@ -408,13 +408,28 @@ function onClickPlay() {
 
                     submitscore.addEventListener('click', function (event) {
 
-                        event.preventDefault();
-                        fetch("index.php", { method: "POST", body: new FormData(finalform) })
-                        .then(res => res.text())
-                        .then(() => alert("Dati salvati con successo!"));
+                        if (inputplayer.textContent != '') {
+
+                            event.preventDefault();
+                            fetch("index.php", { method: "POST", body: new FormData(finalform) })
+                            .then(res => res.text())
+                            .then(() => alert("Dati salvati con successo!"));
+
+                        }
+                        else {
+
+                            event.preventDefault();
+                            inputplayer.placeholder = 'nick non valido!';
+                            setTimeout(() => {
+                                inputplayer.placeholder = 'nickname (max 10 c.)';
+                            }, 2000);
+                            
+                        }
 
                     });
 
+                    
+                    
                 }
 
             }, 250)
