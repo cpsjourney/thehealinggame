@@ -40,6 +40,11 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
         font-size: 2em;
     }
 }
+@media (max-width: 600px) {
+    .bg_title {
+        font-size: 1.5em;
+    }
+}
 .bg_lll_cont {
     display: flex;
     align-items: center;
@@ -48,6 +53,11 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
     width: 95vw;
     height: 15vh;
     transform: scaleY(0);
+}
+@media (max-width: 600px) {
+    .bg_lll_cont {
+        height: 7.5vh;
+    }
 }
 .bg_lll {
     display: flex;
@@ -74,12 +84,30 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
         margin: 0px;
     }
 }
+@media (max-width: 600px) {
+    .bg_l {
+        font-size: 1em;
+        margin: 0px;
+    }
+}
 .bg_logo {
     display: flex;
     text-align: center;
     justify-content: center;
     width: 75px;
     height: 75px;
+}
+@media (max-width: 768px) {
+    .bg_logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .bg_logo {
+        width: 25px;
+        height: 25px;
+    }
 }
 .bg_logo_middle {
     display: flex;
@@ -88,12 +116,36 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
     width: 37.5px;
     height: 37.5px;
 }
+@media (max-width: 768px) {
+    .bg_logo_middle {
+        width: 19px;
+        height: 19px;
+    }
+}
+@media (max-width: 600px) {
+    .bg_logo_middle {
+        width: 9.5px;
+        height: 9.5px;
+    }
+}
 .bg_logo_small {
     display: flex;
     text-align: center;
     justify-content: center;
     width: 18.75px;
     height: 18.75px;
+}
+@media (max-width: 768px) {
+    .bg_logo_small {
+        width: 9.5px;
+        height: 9.5px;
+    }
+}
+@media (max-width: 600px) {
+    .bg_logo_small {
+        width: 4.75px;
+        height: 4.75px;
+    }
 }
 .bg_infobox {
     display: flex;
@@ -116,6 +168,11 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
 @media (max-width: 768px) {
     .bg_infobox {
         font-size: 1.1em;
+    }
+}
+@media (max-width: 600px) {
+    .bg_infobox {
+        font-size: 0.6em;
     }
 }
 .gm_cont {
@@ -166,6 +223,16 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
     overflow-y: auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2em;
+}
+@media (max-width: 768px) {
+    .gm_effleaderboard {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 600px) {
+    .gm_effleaderboard {
+        font-size: 1.25em;
+    }
 }
 .gm_effleaderboard::-webkit-scrollbar {
     width: 10px;
@@ -313,6 +380,12 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
     width: 50px;
     height: 50px;
 }
+@media (max-width: 600px) {
+    .gm_loading {
+        width: 25px;
+        height: 25px;
+    }
+}
 .gm_ctlabel {
     display: flex;
     align-items: center;
@@ -331,6 +404,11 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
         font-size: 1.1em;
     }
 }
+@media (max-width: 600px) {
+    .gm_ctlabel {
+        font-size: 0.6em;
+    }
+}
 .gm_userchar {
     display: flex;
     align-items: center;
@@ -341,6 +419,12 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
     transition: transform 0.25s;
     user-select: none;
     transform: scale3d(2, 2, 2);
+}
+@media (max-width: 600px) {
+    .gm_userchar {
+        width: 33px;
+        height: 33px;
+    }
 }
 .gm_score {
     position: absolute;
@@ -364,6 +448,13 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
         font-size: 1.1em;
     }
 }
+@media (max-width: 600px) {
+    .gm_score {
+        font-size: 0.6em;
+        top: 25px;
+        right: 25px;
+    }
+}
 .gm_endpage {
     display: flex;
     flex-direction: column;
@@ -383,7 +474,7 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
 @media (max-width: 600px) {
     .gm_endpageallelements {
         flex-direction: column;
-        width: 33%;
+        width: 50%;
         height: 75%;
     }
 }
@@ -554,6 +645,11 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
 @media (max-width: 768px) {
     .bg_credits {
         font-size: 1.1em;
+    }
+}
+@media (max-width: 600px) {
+    .bg_credits {
+        font-size: 0.6em;
     }
 }
 .bg_creditstext {
