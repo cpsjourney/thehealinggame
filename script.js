@@ -300,7 +300,6 @@ function onClickPlay() {
                     var currentsize = usr.style.transform ? parseFloat(usr.style.transform.split('(')[1].split(',')[0]) : 2;
                     
                     if (currentsize == 0) {
-                        console.log("GAME OVER!");
                         clearInterval(interval);
                     }
                     else {
@@ -312,8 +311,6 @@ function onClickPlay() {
 
                         sizes.set(`size di ${usr.id}`, dynamicsize);
                     }
-
-                    console.log(`la current e' ${currentsize}, la dynamic e' ${dynamicsize}`);
 
                 }, 500);
 
@@ -372,7 +369,7 @@ function onClickPlay() {
                     inputplayer.className = 'gm_inputs';
                     inputplayer.id = 'inputplayer';
                     inputplayer.name = 'nametosave';
-                    inputplayer.setAttribute('maxlenght', 10);
+                    inputplayer.setAttribute('maxlength', '10');
                     inputplayer.setAttribute('autocomplete', 'off');
                     inputplayer.placeholder = 'nickname (max 10 c.)';
 
@@ -455,7 +452,6 @@ onClickPlay();
 
 setInterval(() => {
     count ++;
-    console.log(count);
     flashIt(title, "2025 EDITION", "THE HEALING MINIGAME");
     flashIt(infobox, "DISCLAIMER: This game can develop rages and hostile behaviours caused by the difficulty of ending it. Stay calm and focus on the goal.", "HOW TO PLAY: Click on EVERY health symbol ASAP and try to make some points before they get too small!");
 }, 5000);
