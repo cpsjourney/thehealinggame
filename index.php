@@ -4,7 +4,7 @@ $db = new SQLite3('/tmp/gm_scores.sqlite');
 
 $db->exec("CREATE TABLE IF NOT EXISTS gm_scores (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome TEXT,
+    nome TEXT CHECK(length(nome) <= 10),
     punteggio INTEGER
 )");
 

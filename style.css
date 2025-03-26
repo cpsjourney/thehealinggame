@@ -152,6 +152,7 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.6em;
+    max-width: 90vw;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 10vw;
