@@ -168,7 +168,7 @@ function showLeaderboard() {
             effleaderboard_row.appendChild(l2);
             effleaderboard_row.appendChild(effleaderboard_row_record2);
             effleaderboard_row.appendChild(l3);
-            
+
         }
 
     }
@@ -179,7 +179,7 @@ function showLeaderboard() {
 
     }
 
-    
+
 
     main.appendChild(arrowanddirectionaltext1);
     arrowanddirectionaltext1.appendChild(directionaltext1);
@@ -452,6 +452,6 @@ onClickPlay();
 
 setInterval(() => {
     count ++;
-    flashIt(title, "2025 EDITION", "THE HEALING MINIGAME");
-    flashIt(infobox, "DISCLAIMER: This game can develop rages and hostile behaviours caused by the difficulty of ending it. Stay calm and focus on the goal.", "HOW TO PLAY: Click on EVERY health symbol ASAP and try to make some points before they get too small!");
-}, 5000);
+    flashIt(title, "LATEST VERSION IS ON", "THE HEALING MINIGAME");
+    flashIt(infobox, "DISCLAIMER: This game can develop hard rages caused by the difficulty of ending it. Play responsibly!", "HOW TO PLAY: Click on EVERY health symbol ASAP and try to make some points before they get too small!");
+}, 8000);

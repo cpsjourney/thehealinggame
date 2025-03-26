@@ -25,8 +25,6 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
     font-size: 2.5em;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 20vw;
-    margin-left: 20vw;
     padding: 10px;
     user-select: none;
     border-style: solid;
@@ -37,12 +35,12 @@ a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowa
 }
 @media (max-width: 768px) {
     .bg_title {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 }
 @media (max-width: 600px) {
     .bg_title {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 }
 .bg_lll_cont {
