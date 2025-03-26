@@ -5,7 +5,7 @@ body{
     flex-direction: column;
     margin: 0px;
     padding: 10px;
-    background-color: rgba(220, 220, 220, 0.75);
+    background-image: radial-gradient(circle, rgb(255, 255, 255) 90%, rgb(200, 200, 200) 100%); 
     cursor: url("https://cur.cursors-4u.net/cursors/cur-5/cur477.cur"), auto !important;
 }
 a:hover, button:hover, .gm_playbtn:hover, .gm_userchar, .gm_retrybtn, .gm_arrowanddirectionaltext {
